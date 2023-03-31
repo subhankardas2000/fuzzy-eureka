@@ -47,29 +47,28 @@ my_list[0] = 'ansh'    # modifying list => list modifiedprint(my_tuple[0])     #
 There are several built-in data types in Python. Although, Python doesn't require data types to be defined explicitly during variable declarations type errors are likely to occur if the knowledge of data types and their compatibility with each other are neglected. Python provides type() and isinstance() functions to check the type of these variables. These data types can be grouped into the following categories-
 
 None Type:
----------
 None keyword represents the null values in Python. Boolean equality operation can be performed using these NoneType objects.
-Class Name		Description
-NoneType		Represents the NULL values in Python.
+Class Name		       Description
+NoneType		         Represents the NULL values in Python.
+
 Numeric Types:
 There are three distinct numeric types - integers, floating-point numbers, and complex numbers. Additionally, booleans are a sub-type of integers.
-Class Name		Description
-int			Stores integer literals including hex, octal and binary numbers as integers
-float			Stores literals containing decimal values and/or exponent signs as floating-point numbers
-complex			Stores complex numbers in the form (A + Bj) and has attributes: real and imag
-bool			Stores boolean value (True or False).
+Class Name		       Description
+int			             Stores integer literals including hex, octal and binary numbers as integers
+float			           Stores literals containing decimal values and/or exponent signs as floating-point numbers
+complex			         Stores complex numbers in the form (A + Bj) and has attributes: real and imag
+bool			            Stores boolean value (True or False).
 
 Note: The standard library also includes fractions to store rational numbers and decimal to store floating-point numbers with user-defined precision.
 
 Sequence Types:
----------------
 According to Python Docs, there are three basic Sequence Types - lists, tuples, and range objects. Sequence types have the in and not in operators defined for their traversing their elements. These operators share the same priority as the comparison operations.
-Class Name		Description
-----------		-----------
-list			Mutable sequence used to store collection of items.
-tuple			Immutable sequence used to store collection of items.
-range			Represents an immutable sequence of numbers generated during execution.
-str			Immutable sequence of Unicode code points to store textual data.
+Class Name		       Description
+
+list			            Mutable sequence used to store collection of items.
+tuple			           Immutable sequence used to store collection of items.
+range			           Represents an immutable sequence of numbers generated during execution.
+str		             	Immutable sequence of Unicode code points to store textual data.
 
 Note: The standard library also includes additional types for processing:
 
@@ -78,23 +77,20 @@ Note: The standard library also includes additional types for processing:
 
 Mapping Types:
 A mapping object can map hashable values to random objects in Python. Mappings objects are mutable and there is currently only one standard mapping type, the dictionary.
-Class Name 		Description
-dict			Stores comma-separated list of key: value pairs
-set	   		Mutable unordered collection of distinct hashable objects.
-frozenset       	Immutable collection of distinct hashable objects.
+Class Name 		      Description
+dict			            Stores comma-separated list of key: value pairs
+set	   	          	Mutable unordered collection of distinct hashable objects.
+frozenset       	  Immutable collection of distinct hashable objects.
 
 Set Types:
-----------
 Currently, Python has two built-in set types - set and frozenset. set type is mutable and supports methods like add() and remove(). frozenset type is immutable and can't be modified after creation.
 
 Note: set is mutable and thus cannot be used as key for a dictionary. On the other hand, frozenset is immutable and thus, hashable, and can be used as a dictionary key or as an element of another set.
 
 Modules:
---------
 Module is an additional built-in type supported by the Python Interpreter. It supports one special operation, i.e., attribute access: mymod.myobj, where mymod is a module and myobj references a name defined in m's symbol table. The module's symbol table resides in a very special attribute of the module __dict__, but direct assignment to this module is neither possible nor recommended.
 
 Callable Types:
----------------
 Callable types are the types to which function call can be applied. They can be user-defined functions, instance methods, generator functions, and some other built-in functions, methods and classes.
 Refer to the documentation at docs.python.org for a detailed view of the callable types.
 
@@ -103,7 +99,7 @@ Refer to the documentation at docs.python.org for a detailed view of the call
 The pass keyword represents a null operation in Python. It is generally used for the purpose of filling up empty blocks of code which may execute during runtime but has yet to be written. Without the pass statement in the following code, we may run into some errors during code execution.
 
 def myEmptyFunc():
-   # do nothing
+   #do nothing
    pass
 myEmptyFunc()    # nothing happens## Without the pass keyword# File "<stdin>", line 3# IndentationError: expected an indented block
 
